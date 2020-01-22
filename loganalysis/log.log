@@ -608,3 +608,138 @@
 2020-01-22 12:19:50.155  INFO 31212 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-01-22 12:19:50.168  INFO 31212 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
 2020-01-22 12:30:17.415  INFO 31212 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 13:48:59.808  INFO 27164 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 27164 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 13:48:59.830  INFO 27164 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 13:49:00.630  INFO 27164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 13:49:00.640  INFO 27164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 13:49:00.640  INFO 27164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 13:49:00.721  INFO 27164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 13:49:00.721  INFO 27164 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 852 ms
+2020-01-22 13:49:00.876  INFO 27164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 13:49:00.933  INFO 27164 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 13:49:01.054  INFO 27164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 13:49:01.057  INFO 27164 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.53 seconds (JVM running for 3.497)
+2020-01-22 13:49:28.301  INFO 27164 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 13:49:28.302  INFO 27164 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 13:49:28.318  INFO 27164 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-01-22 14:04:38.370  INFO 27164 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:04:55.304  INFO 30576 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 30576 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:04:55.311  INFO 30576 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:04:56.461  INFO 30576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:04:56.470  INFO 30576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:04:56.470  INFO 30576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:04:56.542  INFO 30576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:04:56.543  INFO 30576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1113 ms
+2020-01-22 14:04:56.717  INFO 30576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:04:56.783  INFO 30576 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:04:56.934  INFO 30576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:04:56.937  INFO 30576 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.613 seconds (JVM running for 3.989)
+2020-01-22 14:05:02.186  INFO 30576 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:05:02.187  INFO 30576 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:05:02.202  INFO 30576 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-22 14:09:47.400  INFO 30576 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:09:55.468  INFO 28772 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 28772 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:09:55.471  INFO 28772 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:09:56.599  INFO 28772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:09:56.610  INFO 28772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:09:56.610  INFO 28772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:09:56.703  INFO 28772 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:09:56.703  INFO 28772 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 984 ms
+2020-01-22 14:09:56.866  INFO 28772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:09:56.925  INFO 28772 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:09:57.048  INFO 28772 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:09:57.051  INFO 28772 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.571 seconds (JVM running for 3.876)
+2020-01-22 14:10:03.384  INFO 28772 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:10:03.385  INFO 28772 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:10:03.401  INFO 28772 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-01-22 14:14:28.539  INFO 28772 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:14:34.993  INFO 8232 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 8232 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:14:34.996  INFO 8232 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:14:36.515  INFO 8232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:14:36.543  INFO 8232 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:14:36.544  INFO 8232 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:14:36.784  INFO 8232 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:14:36.785  INFO 8232 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1701 ms
+2020-01-22 14:14:37.215  INFO 8232 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:14:37.360  INFO 8232 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:14:37.726  INFO 8232 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:14:37.734  INFO 8232 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 3.343 seconds (JVM running for 4.593)
+2020-01-22 14:14:42.439  INFO 8232 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:14:42.440  INFO 8232 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:14:42.463  INFO 8232 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-01-22 14:14:52.289  INFO 8232 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:19:34.137  INFO 31296 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 31296 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:19:34.140  INFO 31296 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:19:35.468  INFO 31296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:19:35.479  INFO 31296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:19:35.479  INFO 31296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:19:35.561  INFO 31296 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:19:35.561  INFO 31296 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1369 ms
+2020-01-22 14:19:35.764  INFO 31296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:19:35.839  INFO 31296 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:19:35.998  INFO 31296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:19:36.002  INFO 31296 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.896 seconds (JVM running for 5.054)
+2020-01-22 14:19:42.599  INFO 31296 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:19:42.600  INFO 31296 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:19:42.614  INFO 31296 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-22 14:21:16.798  INFO 31296 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:21:31.627  INFO 31380 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 31380 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:21:31.630  INFO 31380 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:21:33.005  INFO 31380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:21:33.015  INFO 31380 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:21:33.016  INFO 31380 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:21:33.109  INFO 31380 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:21:33.110  INFO 31380 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1275 ms
+2020-01-22 14:21:33.271  INFO 31380 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:21:33.327  INFO 31380 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:21:33.441  INFO 31380 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:21:33.445  INFO 31380 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.737 seconds (JVM running for 4.057)
+2020-01-22 14:22:06.674  INFO 31380 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:22:06.675  INFO 31380 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:22:06.697  INFO 31380 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-01-22 14:26:19.881  INFO 31380 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:26:27.191  INFO 29804 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 29804 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:26:27.195  INFO 29804 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:26:28.094  INFO 29804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:26:28.103  INFO 29804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:26:28.104  INFO 29804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:26:28.189  INFO 29804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:26:28.189  INFO 29804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 950 ms
+2020-01-22 14:26:28.350  INFO 29804 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:26:28.404  INFO 29804 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:26:28.517  INFO 29804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:26:28.520  INFO 29804 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.563 seconds (JVM running for 3.971)
+2020-01-22 14:27:01.385  INFO 29804 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:27:01.386  INFO 29804 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:27:01.399  INFO 29804 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-01-22 14:35:04.895  INFO 29804 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:35:11.891  INFO 15348 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 15348 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:35:11.894  INFO 15348 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:35:12.923  INFO 15348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:35:12.931  INFO 15348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:35:12.931  INFO 15348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:35:12.998  INFO 15348 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:35:12.999  INFO 15348 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1055 ms
+2020-01-22 14:35:13.156  INFO 15348 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:35:13.221  INFO 15348 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:35:13.355  INFO 15348 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:35:13.359  INFO 15348 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.017 seconds (JVM running for 3.189)
+2020-01-22 14:35:27.391  INFO 15348 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:35:27.392  INFO 15348 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:35:27.407  INFO 15348 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-01-22 14:36:16.034  INFO 15348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:36:28.529  INFO 27768 --- [main] z.o.loganalysis.LoganalysisApplication   : Starting LoganalysisApplication on Dell-PC with PID 27768 (D:\fancky\Git\Java\Work\loganalysis\target\classes started by Administrator in D:\fancky\Git\Java\Work\loganalysis)
+2020-01-22 14:36:28.532  INFO 27768 --- [main] z.o.loganalysis.LoganalysisApplication   : No active profile set, falling back to default profiles: default
+2020-01-22 14:36:29.537  INFO 27768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9090 (http)
+2020-01-22 14:36:29.546  INFO 27768 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-01-22 14:36:29.546  INFO 27768 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-01-22 14:36:29.615  INFO 27768 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-01-22 14:36:29.615  INFO 27768 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1042 ms
+2020-01-22 14:36:29.775  INFO 27768 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-22 14:36:29.856  INFO 27768 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-01-22 14:36:29.975  INFO 27768 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9090 (http) with context path ''
+2020-01-22 14:36:29.978  INFO 27768 --- [main] z.o.loganalysis.LoganalysisApplication   : Started LoganalysisApplication in 2.43 seconds (JVM running for 3.709)
+2020-01-22 14:37:31.802  INFO 27768 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-22 14:37:31.803  INFO 27768 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-01-22 14:37:31.822  INFO 27768 --- [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-01-22 14:50:28.639  INFO 27768 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
