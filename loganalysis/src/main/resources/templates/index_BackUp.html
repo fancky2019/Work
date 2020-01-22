@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>LogAnalysis</title>
+    <!--    &lt;!&ndash;<link rel="icon" href="图片位置" type="image/x-icon"/>&ndash;&gt;-->
+    <!--    &lt;!&ndash; Bootstrap Core CSS &ndash;&gt;-->
+    <!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!--    &lt;!&ndash; Custom CSS &ndash;&gt;-->
+    <!--    <link href="css/landing-page.css" rel="stylesheet">-->
+
+
+</head>
+
+<body>
+
+<div id="top" style="width: 100%;height: 70px">
+
+
+
+    <input type="file" id="uploadFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
+    <input id="selectFilePath" readonly>
+    <input id="uploadPath" type="hidden">
+    <input type="button" id="openFile" value="选择ClientIn日志文件">
+    <input id="upload" type="button" value="上传"/>
+
+
+
+
+    <!--    <input id="uploadFile" type="file" />-->
+    <!--    <input id="upload" type="button" value="上传"  />-->
+    <!--    <input id="uploadPath" type="hidden">-->
+
+
+    <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
+    <select id="statisticsKind">
+        <option value="second">second</option>
+        <option value="minute">minute</option>
+        <option value="hour">hour</option>
+    </select>
+    <button id="statisticsAnalysis"> 统计</button>
+</div>
+<!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+<div id="main" style="width: 1600px;height:600px;">
+
+</div>
+
+
+<script src="js/jquery/jquery-3.3.1.min.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/index.js"></script>
+
+<!--    <script >-->
+<!--        $(".headerpage").load("header.html");-->
+<!--        $(".footerpage").load("footer.html");-->
+
+<!--    </script>-->
+
+</body>
+
+</html>
