@@ -45,6 +45,7 @@ var TableInit = function () {
             //showColumns: true, //显示下拉框勾选要显示的列
             showExport: true,
             exportDataType: "basic",
+            rowStyle:rowStyle,//通过自定义函数设置行样式
             columns: [
                 // {
                 //     field: '',
@@ -254,6 +255,21 @@ function jsonDateFormat(jsonDate) {
         return "时间格式转换错误";
     }
 }
+
+
+/*
+row :该行绑定的model
+ */
+function rowStyle(row, index) {
+    var style = {};
+
+    if(row.tPSQueueCount%5==0)
+    {
+        style = {css: {'background': '#ed5565'}};
+    }
+    return style;
+}
+
 
 //查询
 $("#btnSearch").click(function () {
