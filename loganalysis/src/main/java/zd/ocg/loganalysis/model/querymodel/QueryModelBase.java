@@ -1,18 +1,9 @@
-package zd.ocg.loganalysis.model;
+package zd.ocg.loganalysis.model.querymodel;
 
-public class QueryModel<T> {
+public class QueryModelBase {
     private  Integer skip;
     private  Integer take;
 
-    private  T t;
-
-    public T getT() {
-        return t;
-    }
-
-    public void setT(T t) {
-        this.t = t;
-    }
 
     public Integer getSkip() {
         return skip;

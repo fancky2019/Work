@@ -27,8 +27,6 @@ var TableInit = function () {
             //detailView: false,                   //是否显示父子表
 
 
-
-
             method: 'GET',//数据请求方式
             url: oTable.QueryUrl,//请求数据的地址
             contentType: "json",
@@ -111,21 +109,25 @@ var TableInit = function () {
     oTable.queryParams = function (params) {
         var temp = {
             take: params.limit,      //Take
-            skip: params.offset//Skip
-            // birthday: $('#birthday').val(),
-            // name: $("#txtName").val()
+            skip: params.offset,//Skip
+            tPSQueueCount: $("#tPSQueueCount").val()
+
+            // name: $("#tPSQueueCount").val()
             //sex: $("#sex").val()
             //sortOrder: params.sortOrder,
             //sortName: params.sortName
         };
         return temp;
     }
+
     function idFormatter(value, row, index) {
         return row.ID;
     }
+
     function nameFormatter(value, row, index) {
         return row.Name;
     }
+
     function operateFormatter(value, row, index) {
         //return '<a class="edit" style="cursor:pointer;" title="修改">修改</a> ' + '<a class="delete" style="cursor:pointer;" title="删除">删除</a>';
 
@@ -137,7 +139,7 @@ var TableInit = function () {
         'click .edit': function (e, value, row, index) {
             $.ajax({
                 url: '/Home/UpdateRow',
-                data: { id: row.ID },
+                data: {id: row.ID},
                 success: function (result) {
                     if (result.state) {
 
@@ -165,7 +167,7 @@ var TableInit = function () {
                         action: function () {
                             $.ajax({
                                 url: '/Home/DeleteRow',
-                                data: { id: row.ID },
+                                data: {id: row.ID},
                                 success: function (result) {
                                     if (result.state) {
                                         $table.bootstrapTable('refresh');
@@ -248,14 +250,27 @@ function jsonDateFormat(jsonDate) {
         var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
         var milliseconds = date.getMilliseconds();
         return date.getFullYear() + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
-    }
-    catch (ex) {
+    } catch (ex) {
         return "时间格式转换错误";
     }
 }
 
+//查询
+$("#btnSearch").click(function () {
+    //$('#tableList').bootstrapTable({ pageNumber: 1, pageSize: 10 });
+    //$table.bootstrapTable('destroy');
+    //var myTable = new TableInit();
+    //myTable.Init();
+    //alert($table.queryParams.limit);
+    //$("#sex").attr("disabled", false);//禁用
+    //$("#sex").removeAttr("disabled");
+    // $('#sex').prop('disabled', true);//禁用,禁用之后要刷新
+    // $('#sex').selectpicker('refresh');
+    // var sex = $("#sex").val();//多选是个数组
 
-
+    $table.bootstrapTable('selectPage', 1);
+    $table.bootstrapTable('refresh');
+});
 
 
 // //请求参数设置
