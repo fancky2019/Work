@@ -24,6 +24,10 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
 </head>
 <body class="app sidebar-mini">
 <!-- Navbar-->
@@ -141,8 +145,47 @@
 </aside>
 <main class="app-content">
 
-<!--    <div class="app-title"> </div>-->
+    <div class="row">
+        <div class="col-md-12">
+            <div id="top" class="tile" style="height: 70px">
 
+
+                <input type="file" id="uploadClientInFile" style="display: none;" multiple="multiple"
+                       accept=".log,.txt"/>
+                <input id="selectClientInFilePath" readonly>
+                <input id="uploadClientInPath" type="hidden">
+                <input type="button" id="openClientInFile" value="选择ClientIn日志文件">
+                <input id="uploadClientIn" type="button" value="上传ClientIn"/>
+
+
+                <input type="file" id="uploadTPSFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
+                <input id="selectTPSFilePath" readonly>
+                <input id="uploadTPSPath" type="hidden">
+                <input type="button" id="openTPSFile" value="选择TPS日志文件">
+                <input id="uploadTPS" type="button" value="上传TPS"/>
+
+
+                <!--    <input id="uploadFile" type="file" />-->
+                <!--    <input id="upload" type="button" value="上传"  />-->
+                <!--    <input id="uploadPath" type="hidden">-->
+
+
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
+                <select id="statisticsKind">
+                    <option value="second">second</option>
+                    <option value="minute">minute</option>
+                    <option value="hour">hour</option>
+                </select>
+                <button id="statisticsAnalysis"> 统计</button>
+            </div>
+            <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+            <!--            <div id="main" style="width: 1600px;height:600px;">-->
+            <div id="main" class="tile"  >
+                <table id="myTable"></table>
+            </div>
+        </div>
+
+    </div>
 
 
 
@@ -151,8 +194,8 @@
 <!-- Essential javascripts for application to work-->
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+
+
 <!-- The javascript plugin to display page loading on top-->
 <script src="js/plugins/pace.min.js"></script>
 <!-- Page specific javascripts-->
@@ -174,5 +217,11 @@
         ga('send', 'pageview');
     }
 </script>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/tps.js"></script>
 </body>
 </html>
