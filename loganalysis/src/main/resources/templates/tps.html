@@ -26,7 +26,6 @@
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
     <link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
 </head>
 <body class="app sidebar-mini">
@@ -129,15 +128,16 @@
     </div>
     <ul class="app-menu">
         <!--<li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span-->
-                <!--class="app-menu__label">Dashboard</span></a></li>-->
+        <!--class="app-menu__label">Dashboard</span></a></li>-->
         <li class="treeview is-expanded"><a class="app-menu__item" href="#" data-toggle="treeview">
             <i class="app-menu__icon fa fa-laptop"></i>
             <span class="app-menu__label">OCG日志分析</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item" href="/clientIn"><i class="icon fa fa-circle-o"></i>  ClientIn</a></li>
-                <li><a class="treeview-item active" href="/tps"><i class="icon fa fa-circle-o"></i>  TPS</a></li>
-                <li><a class="treeview-item" href="/clientInTPS"><i class="icon fa fa-circle-o"></i>  ClientInTPS</a></li>
+                <li><a class="treeview-item" href="/clientIn"><i class="icon fa fa-circle-o"></i> ClientIn</a></li>
+                <li><a class="treeview-item active" href="/tps"><i class="icon fa fa-circle-o"></i> TPS</a></li>
+                <li><a class="treeview-item" href="/clientInTPS"><i class="icon fa fa-circle-o"></i> ClientInTPS</a>
+                </li>
             </ul>
         </li>
 
@@ -145,9 +145,24 @@
 </aside>
 <main class="app-content">
 
+
     <div class="row">
         <div class="col-md-12">
+
+            <!--            <div id="top1" class="tile" style="height: 70px">-->
+
+            <!--                <input type="file" id="uploadTPSFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>-->
+            <!--                <input id="selectTPSFilePath" readonly>-->
+            <!--                <input id="uploadTPSPath" type="hidden">-->
+            <!--                <input type="button" id="openTPSFile" value="选择TPS日志文件">-->
+            <!--                <input id="uploadTPS" type="button" value="上传TPS"/>-->
+
+
+            <!--            </div>-->
+
+
             <div id="top" class="tile" style="height: 70px">
+
 
                 <input type="file" id="uploadTPSFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
                 <input id="selectTPSFilePath" readonly>
@@ -156,25 +171,20 @@
                 <input id="uploadTPS" type="button" value="上传TPS"/>
 
 
-                <!--    <input id="uploadFile" type="file" />-->
-                <!--    <input id="upload" type="button" value="上传"  />-->
-                <!--    <input id="uploadPath" type="hidden">-->
-
-
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;系统号:</label>
+                <input id="sysNo">
                 <label>&nbsp;&nbsp;&nbsp;&nbsp;排队个数:</label>
-                <input id="tPSQueueCount" >
+                <input id="tPSQueueCount">
                 <button id="btnSearch"> 查询</button>
             </div>
             <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
             <!--            <div id="main" style="width: 1600px;height:600px;">-->
-            <div id="main" class="tile"  >
+            <div id="main" class="tile">
                 <table id="myTable"></table>
             </div>
         </div>
 
     </div>
-
-
 
 
 </main>

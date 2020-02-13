@@ -4,9 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import zd.ocg.loganalysis.model.ClientInLog;
 import zd.ocg.loganalysis.model.ClientInTPS;
-import zd.ocg.loganalysis.model.TPSQueueVM;
 import zd.ocg.loganalysis.service.ClientInTPSService;
 import zd.ocg.loganalysis.service.LogAnalysisService;
 

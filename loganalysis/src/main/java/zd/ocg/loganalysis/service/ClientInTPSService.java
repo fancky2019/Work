@@ -3,13 +3,10 @@ package zd.ocg.loganalysis.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import zd.ocg.loganalysis.model.ClientInLog;
-import zd.ocg.loganalysis.model.TPSQueueVM;
+import zd.ocg.loganalysis.model.viewmodel.TPSQueueVM;
 import zd.ocg.loganalysis.utilities.TXTFile;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
