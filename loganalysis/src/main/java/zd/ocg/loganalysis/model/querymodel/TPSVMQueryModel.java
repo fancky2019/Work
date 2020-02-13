@@ -5,6 +5,24 @@ public class TPSVMQueryModel extends  QueryModelBase {
     private String enqueueTime;
     private String dequeueTime;
     private Integer tPSQueueCount;
+    private String customerNo;
+    private String filePath;
+
+    public String getFilePath() {
+        return filePath;
+    }
+
+    public void setFilePath(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public String getCustomerNo() {
+        return customerNo;
+    }
+
+    public void setCustomerNo(String customerNo) {
+        this.customerNo = customerNo;
+    }
 
     public String getLogTime() {
         return logTime;

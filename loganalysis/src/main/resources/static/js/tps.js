@@ -1,7 +1,7 @@
 var $table = $("#myTable");
 var TableInit = function () {
     var oTable = new Object();
-    oTable.QueryUrl = '/tpsData';
+    oTable.QueryUrl = '/tpsData?';
     oTable.Init = function () {
         $table.bootstrapTable({
 
@@ -45,7 +45,7 @@ var TableInit = function () {
             //showColumns: true, //显示下拉框勾选要显示的列
             showExport: true,
             exportDataType: "basic",
-            rowStyle:rowStyle,//通过自定义函数设置行样式
+            rowStyle: rowStyle,//通过自定义函数设置行样式
             columns: [
                 // {
                 //     field: '',
@@ -63,6 +63,20 @@ var TableInit = function () {
                 //     sortname: 'ID',//排序字段名称
                 //     formatter: idFormatter
                 // },
+                {
+                    field: 'orderType',
+                    title: 'orderType',
+                    width: 100,
+                    align: 'center',
+                    valign: 'middle'
+                },
+                {
+                    field: 'customerNo',
+                    title: 'customerNo',
+                    width: 100,
+                    align: 'center',
+                    valign: 'middle'
+                },
                 {
                     field: 'logTime',
                     title: 'logTime',
@@ -111,13 +125,15 @@ var TableInit = function () {
         var temp = {
             take: params.limit,      //Take
             skip: params.offset,//Skip
-            tPSQueueCount: $("#tPSQueueCount").val()
-
-            // name: $("#tPSQueueCount").val()
-            //sex: $("#sex").val()
-            //sortOrder: params.sortOrder,
-            //sortName: params.sortName
-        };
+            tPSQueueCount: $("#tPSQueueCount").val(),
+            customerNo: $("#sysNo").val(),
+            filePath: $("#uploadTPSPath").val(),
+        // name: $("#tPSQueueCount").val()
+        //sex: $("#sex").val()
+        //sortOrder: params.sortOrder,
+        //sortName: params.sortName
+    }
+        ;
         return temp;
     }
 
@@ -263,8 +279,7 @@ row :该行绑定的model
 function rowStyle(row, index) {
     var style = {};
 
-    if(row.tPSQueueCount%5==0)
-    {
+    if (row.tPSQueueCount > 1) {
         style = {css: {'background': '#ed5565'}};
     }
     return style;

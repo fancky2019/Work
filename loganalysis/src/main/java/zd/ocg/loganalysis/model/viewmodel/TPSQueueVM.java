@@ -1,4 +1,4 @@
-package zd.ocg.loganalysis.model;
+package zd.ocg.loganalysis.model.viewmodel;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -8,6 +8,16 @@ public class TPSQueueVM {
     private LocalDateTime logTime;
     private String EnqueueOrDequeue;
     private int lineCout;
+
+    private NetInfo netInfo;
+
+    public NetInfo getNetInfo() {
+        return netInfo;
+    }
+
+    public void setNetInfo(NetInfo netInfo) {
+        this.netInfo = netInfo;
+    }
 
     public int getId() {
         return id;
