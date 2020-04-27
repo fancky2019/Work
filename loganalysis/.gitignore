@@ -21,7 +21,7 @@ target/
 /target/
 *.log
 *.gz
-
+/uploadfiles/
 
 
 
