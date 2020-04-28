@@ -102,9 +102,17 @@ $("#btnDeleteFile").click(function (e) {
         }
 
     });
+
+
+    //$.post(URL,data,callback); //无法指定 contentType，报错
+    // $.post('/fileupload/deleteFile',JSON.stringify({filePath: filePath}), function (data) {//请求的返回成功的方法
+    //     alert(data.message);
+    // });
 });
 
 $("#btnQuery").click(function (e) {
+
+    //$.get(URL,callback);
     //get
     // $.get("/fileupload/getQuery?customerNo=fancky", function (data) {
     //     // for (let val of data) {
