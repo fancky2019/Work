@@ -1,22 +1,28 @@
 package zd.ocg.loganalysis.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.ResourceUtils;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import zd.ocg.loganalysis.model.viewmodel.FileInfo;
+import zd.ocg.loganalysis.model.viewmodel.MessageResult;
+import zd.ocg.loganalysis.model.viewmodel.TPSVM;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
+import java.util.LinkedList;
 import java.util.UUID;
 
 @Controller
@@ -54,11 +60,11 @@ public class FileUpLoadController {
     @ResponseBody
     public String upload(@RequestParam(value = "file") MultipartFile file) {
         try {
-            LocalDateTime localDateTime=LocalDateTime.now();
-            String  dateStr=   localDateTime.format( DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+            LocalDateTime localDateTime = LocalDateTime.now();
+            String dateStr = localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
             String rootPath = System.getProperty("user.dir");
 //            String rootPath =   ResourceUtils.getURL("classpath:").getPath();
-            String directory=rootPath+"/uploadfiles"+"/"+dateStr+"/";
+            String directory = rootPath + "/uploadfiles" + "/" + dateStr + "/";
             File destFile = new File(directory);
             //判断路径是否存在,和C#不一样。她判断路径和文件是否存在
             if (!destFile.exists()) {
@@ -67,9 +73,30 @@ public class FileUpLoadController {
 
             //获取文件名称
             String sourceFileName = file.getOriginalFilename();
-
             //写入目的文件
-            String fileFullName =directory + sourceFileName;
+            String fileFullName = directory + sourceFileName;
+
+
+            //region  自己计算上传进度
+//            InputStream inputStream = file.getInputStream();
+//            byte[] buffer = new byte[1024];
+//            FileOutputStream fileOutputStream = new FileOutputStream(fileFullName);
+//            long fileSize=file.getSize();
+//            long readTotalSize = 0;
+//            int readSize = 0;
+//            while ((readSize = inputStream.read(buffer)) != -1) {
+//                readTotalSize += readSize;
+//                //计算进度
+//                long progress=readTotalSize/fileSize;
+//                //写入文件
+//                fileOutputStream.write(buffer,0,readSize);
+//
+//            }
+//            fileOutputStream.close();
+//            inputStream.close();
+            //endregion
+
+
             file.transferTo(new File(fileFullName));
 
             return fileFullName;
@@ -87,4 +114,76 @@ public class FileUpLoadController {
         return null != percent ? (Integer) percent : 0;
     }
 
+    // SpringMVC的自动装箱（实体类接收参数）
+    //post提交 data:{}是一个对象，要用对象接收，类的访问级别是共有，否则MVC反射找不到报。
+    //  @ResponseBody  返回业务对象，不要返回字符串，不然前台无法转换JSON而报错，还要Json 序列化操作。
+    @RequestMapping(value = "/deleteFile")
+    @ResponseBody
+    public MessageResult<Void> deleteFile(@RequestBody FileInfo fileInfo) {
+        File file = new File(fileInfo.getFilePath());
+        String returnMsg = "";
+        MessageResult<Void> message = new MessageResult<>();
+        //判断路径是否存在,和C#不一样。她判断路径和文件是否存在
+        if (file.exists()) {
+            if (file.delete()) {
+                returnMsg = "删除成功!";
+                message.setSuccess(true);
+            } else {
+                returnMsg = "删除失败!";
+                message.setSuccess(false);
+            }
+        } else {
+            returnMsg = "文件不存在!";
+            message.setSuccess(false);
+        }
+
+
+        message.setMessage(returnMsg);
+        return message;
+
+    }
+
+
+    //格式错误：无法请求到后端
+//    @RequestMapping(value = "/deleteFile")
+//    @ResponseBody
+//    public MessageResult<Void> deleteFile(@RequestParam(value = "filePath") String filePath) {
+//        File file = new File(filePath);
+//        String returnMsg = "";
+//        MessageResult<Void> message = new MessageResult<>();
+//        //判断路径是否存在,和C#不一样。她判断路径和文件是否存在
+//        if (file.exists()) {
+//            if (file.delete()) {
+//                returnMsg = "删除成功!";
+//                message.setSuccess(true);
+//            } else {
+//                returnMsg = "删除失败!";
+//                message.setSuccess(false);
+//            }
+//        } else {
+//            returnMsg = "文件不存在!";
+//            message.setSuccess(false);
+//        }
+//
+//
+//        message.setMessage(returnMsg);
+//        return message;
+//
+//    }
+
+
+    @GetMapping("/getQuery")
+    @ResponseBody
+    public  LinkedList<TPSVM> getQuery(TPSVM tpsvm) {
+        LinkedList<TPSVM> list=new LinkedList<>() ;
+        TPSVM tpsvm1=new TPSVM() ;
+        tpsvm1.setCustomerNo("fancky123");
+        tpsvm1.settPSQueueCount(22);
+        String timeStr=LocalDateTime.now().format( DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+        tpsvm1.setDequeueTime(timeStr);
+        list.add(tpsvm1);
+        return list;
+    }
 }
+
+
