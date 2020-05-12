@@ -1,8 +1,8 @@
 package zd.ocg.loganalysis.model.querymodel;
 
 public class QueryModelBase {
-    private  Integer skip;
-    private  Integer take;
+    private Integer skip;
+    private Integer take;
 
 
     public Integer getSkip() {

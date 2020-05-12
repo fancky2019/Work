@@ -3,7 +3,7 @@ package zd.ocg.loganalysis.model;
 import java.util.List;
 
 public class PageData<T> {
-    private  Integer total;
+    private Integer total;
     private List<T> rows;
 
     public Integer getTotal() {

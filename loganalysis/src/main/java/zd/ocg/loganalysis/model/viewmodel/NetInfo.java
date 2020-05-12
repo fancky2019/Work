@@ -1,8 +1,8 @@
 package zd.ocg.loganalysis.model.viewmodel;
 
 public class NetInfo {
-    private  String orderType;
-    private  String customerNo;
+    private String orderType;
+    private String customerNo;
 
     public String getOrderType() {
         return orderType;

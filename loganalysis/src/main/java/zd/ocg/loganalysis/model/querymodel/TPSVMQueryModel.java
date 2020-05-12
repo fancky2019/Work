@@ -1,6 +1,6 @@
 package zd.ocg.loganalysis.model.querymodel;
 
-public class TPSVMQueryModel extends  QueryModelBase {
+public class TPSVMQueryModel extends QueryModelBase {
     private String logTime;
     private String enqueueTime;
     private String dequeueTime;

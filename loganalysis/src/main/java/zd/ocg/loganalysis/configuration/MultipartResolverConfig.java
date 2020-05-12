@@ -9,11 +9,9 @@ import zd.ocg.loganalysis.uploadFile.CustomMultipartResolver;
 public class MultipartResolverConfig {
 
 
-
-        @Bean(name = "multipartResolver")
-        public MultipartResolver multipartResolver()
-        {
-            return new CustomMultipartResolver();
-        }
+    @Bean(name = "multipartResolver")
+    public MultipartResolver multipartResolver() {
+        return new CustomMultipartResolver();
+    }
 
 }

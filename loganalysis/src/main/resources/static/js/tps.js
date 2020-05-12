@@ -123,16 +123,16 @@ var TableInit = function () {
     }
     oTable.queryParams = function (params) {
         var temp = {
-            take: params.limit,      //Take
-            skip: params.offset,//Skip
-            tPSQueueCount: $("#tPSQueueCount").val(),
-            customerNo: $("#sysNo").val(),
-            filePath: $("#uploadTPSPath").val(),
-        // name: $("#tPSQueueCount").val()
-        //sex: $("#sex").val()
-        //sortOrder: params.sortOrder,
-        //sortName: params.sortName
-    }
+                take: params.limit,      //Take
+                skip: params.offset,//Skip
+                tPSQueueCount: $("#tPSQueueCount").val(),
+                customerNo: $("#sysNo").val(),
+                filePath: $("#uploadTPSPath").val(),
+                // name: $("#tPSQueueCount").val()
+                //sex: $("#sex").val()
+                //sortOrder: params.sortOrder,
+                //sortName: params.sortName
+            }
         ;
         return temp;
     }

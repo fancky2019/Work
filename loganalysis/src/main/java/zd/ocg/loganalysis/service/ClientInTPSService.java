@@ -75,8 +75,8 @@ public class ClientInTPSService {
         return tPSQueueData;
     }
 
-    public LinkedHashMap<String, Integer> statisticsAnalysis(String fileName , TimeUnit unit) {
-        List<TPSQueueVM> datas=readData(fileName);
+    public LinkedHashMap<String, Integer> statisticsAnalysis(String fileName, TimeUnit unit) {
+        List<TPSQueueVM> datas = readData(fileName);
 //        LocalDate tomorrow = LocalDate.parse("2020-01-14", DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 //        LocalDateTime localDateTime=  LocalDateTime.of(tomorrow, LocalTime.of(0,0,0));
         LinkedHashMap<String, List<TPSQueueVM>> groupByResult = null;
@@ -105,7 +105,7 @@ public class ClientInTPSService {
 
         int m = 0;
 
-         return  statisticsAnalysis;
+        return statisticsAnalysis;
     }
 
 
