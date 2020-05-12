@@ -13,9 +13,11 @@ public class ClientInLog {
     public LocalDateTime getLogTime() {
         return logTime;
     }
+
     public String getLogTimeSecondStr() {
         return logTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
+
     public String getLogTimeMinuteStr() {
         return logTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
     }

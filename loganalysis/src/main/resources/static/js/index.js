@@ -90,7 +90,7 @@ let initEChart = function (xAxisData, yAxisData, timeUint) {
     myChart.setOption(option, true);
 
     //根据窗口的大小变动图表 --- 重点
-    window.onresize = function(){
+    window.onresize = function () {
         myChart.resize();
         //myChart1.resize();    //若有多个图表变动，可多写
 
@@ -225,7 +225,7 @@ $("#uploadFile").change(function () {
     // let file = $("#uploadFile");
     let fullName = $("#uploadFile").val();
     let fileNames = fullName.split("\\");
-    let fileName=fileNames[fileNames.length-1]
+    let fileName = fileNames[fileNames.length - 1]
     $("#selectFilePath").val(fileName);
 });
 

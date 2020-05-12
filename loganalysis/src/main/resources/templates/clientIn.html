@@ -131,9 +131,11 @@
             <span class="app-menu__label">OCG日志分析</span><i
                 class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
-                <li><a class="treeview-item active" href="/clientIn"><i class="icon fa fa-circle-o"></i>  ClientIn</a></li>
+                <li><a class="treeview-item active" href="/clientIn"><i class="icon fa fa-circle-o"></i> ClientIn</a>
+                </li>
                 <li><a class="treeview-item" href="/tps"> <i class="icon fa fa-circle-o"></i> TPS</a></li>
-                <li><a class="treeview-item" href="/clientInTPS"><i class="icon fa fa-circle-o"></i>  ClientInTPS</a></li>
+                <li><a class="treeview-item" href="/clientInTPS"><i class="icon fa fa-circle-o"></i> ClientInTPS</a>
+                </li>
             </ul>
         </li>
 
@@ -143,34 +145,34 @@
     <div class="row">
         <div class="col-md-12">
 
-                <!--    <div class="app-title">-->
-                <div id="top" class="tile" style="height: 70px">
+            <!--    <div class="app-title">-->
+            <div id="top" class="tile" style="height: 70px">
 
 
-                    <input type="file" id="uploadFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
-                    <input id="selectFilePath" readonly>
-                    <input id="uploadPath" type="hidden">
-                    <input type="button" id="openFile" value="选择ClientIn日志文件">
-                    <input id="upload" type="button" value="上传"/>
+                <input type="file" id="uploadFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
+                <input id="selectFilePath" readonly>
+                <input id="uploadPath" type="hidden">
+                <input type="button" id="openFile" value="选择ClientIn日志文件">
+                <input id="upload" type="button" value="上传"/>
 
 
-                    <!--    <input id="uploadFile" type="file" />-->
-                    <!--    <input id="upload" type="button" value="上传"  />-->
-                    <!--    <input id="uploadPath" type="hidden">-->
+                <!--    <input id="uploadFile" type="file" />-->
+                <!--    <input id="upload" type="button" value="上传"  />-->
+                <!--    <input id="uploadPath" type="hidden">-->
 
 
-                    <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
-                    <select id="statisticsKind">
-                        <option value="second">second</option>
-                        <option value="minute">minute</option>
-                        <option value="hour">hour</option>
-                    </select>
-                    <button id="statisticsAnalysis"> 统计</button>
-                </div>
-                <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-<!--                <div id="main" style="width: 1200px;height:600px;">-->
+                <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
+                <select id="statisticsKind">
+                    <option value="second">second</option>
+                    <option value="minute">minute</option>
+                    <option value="hour">hour</option>
+                </select>
+                <button id="statisticsAnalysis"> 统计</button>
+            </div>
+            <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+            <!--                <div id="main" style="width: 1200px;height:600px;">-->
 
-                    <div id="main" class="tile"  style="height:600px;" >
+            <div id="main" class="tile" style="height:600px;">
 
             </div>
         </div>

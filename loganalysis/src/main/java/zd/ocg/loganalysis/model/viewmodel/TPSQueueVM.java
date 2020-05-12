@@ -28,7 +28,6 @@ public class TPSQueueVM {
     }
 
 
-
     public int getLineCout() {
         return lineCout;
     }
@@ -49,6 +48,7 @@ public class TPSQueueVM {
     public String getLogTimeSecondStr() {
         return logTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
     }
+
     public String getLogTimeMinuteStr() {
         return logTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"));
     }

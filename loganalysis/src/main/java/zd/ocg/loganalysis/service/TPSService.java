@@ -90,6 +90,7 @@ public class TPSService {
 
         return statisticsAnalysisData;
     }
+
     private List<TPSVM> statisticsAnalysis(List<TPSQueueVM> listTPSQueueVM) {
         List<TPSVM> tpsvmList = new ArrayList<>();
 
@@ -110,7 +111,7 @@ public class TPSService {
 
             deQueueList.forEach(d ->
             {
-                if (p.getNetInfo().getOrderType().equals(d.getNetInfo().getOrderType()) && p.getNetInfo().getCustomerNo().equals( d.getNetInfo().getCustomerNo())) {
+                if (p.getNetInfo().getOrderType().equals(d.getNetInfo().getOrderType()) && p.getNetInfo().getCustomerNo().equals(d.getNetInfo().getCustomerNo())) {
                     tpsvm.setDequeueTime(d.getLogTime().format(dateTimeFormatter));
                 }
             });

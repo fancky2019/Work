@@ -39,6 +39,7 @@ public class LogAnalysisController {
     public String index() {
         return "index";
     }
+
     @RequestMapping("/clientIn")
     public String clientIn() {
         return "clientIn";

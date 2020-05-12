@@ -233,8 +233,6 @@ let initEChart = function (xAxisData, yAxisDataClientIn, yAxisDataTPS, timeUint)
         ],
 
 
-
-
         xAxis: {
             type: 'category',
             boundaryGap: false,
@@ -278,7 +276,7 @@ let initEChart = function (xAxisData, yAxisDataClientIn, yAxisDataTPS, timeUint)
                 type: 'line',
                 itemStyle: {
                     normal: {
-                         color: '#D14A61', //改变折线点的颜色
+                        color: '#D14A61', //改变折线点的颜色
                         lineStyle: {
                             color: '#D14A61' //改变折线颜色
                         }
@@ -293,7 +291,7 @@ let initEChart = function (xAxisData, yAxisDataClientIn, yAxisDataTPS, timeUint)
     myChart.setOption(option, true);
 
     //根据窗口的大小变动图表 --- 重点
-    window.onresize = function(){
+    window.onresize = function () {
         myChart.resize();
         //myChart1.resize();    //若有多个图表变动，可多写
 

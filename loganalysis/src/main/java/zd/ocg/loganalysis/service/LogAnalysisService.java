@@ -80,7 +80,7 @@ public class LogAnalysisService {
                         String logTimeStr = p.substring(0, 21);
                         LocalDateTime logTime = LocalDateTime.parse(logTimeStr, DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss:SSS"));
 
-                        listString.forEach(str->
+                        listString.forEach(str ->
                         {
                             ClientInLog clientInLog = new ClientInLog();
 

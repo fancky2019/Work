@@ -174,12 +174,12 @@ public class FileUpLoadController {
 
     @GetMapping("/getQuery")
     @ResponseBody
-    public  LinkedList<TPSVM> getQuery(TPSVM tpsvm) {
-        LinkedList<TPSVM> list=new LinkedList<>() ;
-        TPSVM tpsvm1=new TPSVM() ;
+    public LinkedList<TPSVM> getQuery(TPSVM tpsvm) {
+        LinkedList<TPSVM> list = new LinkedList<>();
+        TPSVM tpsvm1 = new TPSVM();
         tpsvm1.setCustomerNo("fancky123");
         tpsvm1.settPSQueueCount(22);
-        String timeStr=LocalDateTime.now().format( DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
+        String timeStr = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
         tpsvm1.setDequeueTime(timeStr);
         list.add(tpsvm1);
         return list;
