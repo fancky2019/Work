@@ -89,16 +89,19 @@ public class TPSController {
 
 //        String fileName = "C:\\Users\\Administrator\\Desktop\\TPSQueue.log";
 //         tPSService.getData();
-//        List<TPSVM> list = tPSService.statisticsAnalysis(fileName);
-        List<TPSVM> list = null;
-        Object tpsData = session.getAttribute("tpsData");
-        if (tpsData == null) {
-            //   String fileName = "C:\\Users\\Administrator\\Desktop\\TPSQueue.log";
-            list = tPSService.statisticsAnalysis(queryModel.getFilePath());
-            session.setAttribute("tpsData", list);
-        } else {
-            list = (List<TPSVM>) tpsData;
-        }
+        List<TPSVM> list = tPSService.statisticsAnalysis(queryModel.getFilePath());
+
+
+        //采用session
+//        List<TPSVM> list = null;
+//        Object tpsData = session.getAttribute("tpsData");
+//        if (tpsData == null) {
+//            //   String fileName = "C:\\Users\\Administrator\\Desktop\\TPSQueue.log";
+//            list = tPSService.statisticsAnalysis(queryModel.getFilePath());
+//            session.setAttribute("tpsData", list);
+//        } else {
+//            list = (List<TPSVM>) tpsData;
+//        }
 
         if (queryModel.gettPSQueueCount() != null) {
             list = list.stream().filter(p -> p.gettPSQueueCount() > queryModel.gettPSQueueCount()).collect(Collectors.toList());
