@@ -42,7 +42,7 @@ public class ClientInTPSService {
                     LocalDateTime logTime = LocalDateTime.parse(logTimeStr, DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss:SSS"));
                     //66
                     int colonIndex = p.indexOf(":", 66);
-                    String enqueueOrDequeue = p.substring(66, colonIndex);
+                    String enqueueOrDequeue = p.substring(66+1, colonIndex);
 
                     //   String content = p.substring(colonIndex, p.length() - 1);
 
@@ -60,7 +60,7 @@ public class ClientInTPSService {
                     tPSQueueVM.setId(++id);
                     tPSQueueVM.setLogTime(logTime);
                     tPSQueueVM.setEnqueueOrDequeue(enqueueOrDequeue);
-                    tPSQueueVM.setLineCout(currentLineCout);
+                    tPSQueueVM.setLineCount(currentLineCout);
                     tPSQueueData.add(tPSQueueVM);
                 } catch (Exception ex) {
                     logger.error(p);
@@ -96,9 +96,13 @@ public class ClientInTPSService {
         LinkedHashMap<String, Integer> statisticsAnalysis = new LinkedHashMap<>();
         groupByResult.forEach((key, val) ->
         {
+//            if(key.equals("2020-07-17 15:31:04"))
+//            {
+//                int m=0;
+//            }
             IntSummaryStatistics intSummaryStatistics = val.stream().mapToInt(p -> p.getId()).summaryStatistics();
             int maxId = intSummaryStatistics.getMax();
-            int currentLineCount = val.stream().filter(p -> p.getId() == maxId).collect(Collectors.toList()).get(0).getLineCout();
+            int currentLineCount = val.stream().filter(p -> p.getId() == maxId).collect(Collectors.toList()).get(0).getLineCount();
             statisticsAnalysis.put(key, currentLineCount);
         });
 

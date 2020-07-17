@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06a1b95d-f8de-4d96-a7fe-36b3e885aeac" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/configuration/MultipartResolverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/configuration/MultipartResolverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/controller/FileUpLoadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/controller/FileUpLoadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/controller/LogAnalysisController.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/controller/LogAnalysisController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/ClientInLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/ClientInLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/PageData.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/PageData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/querymodel/QueryModelBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/querymodel/QueryModelBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/querymodel/TPSVMQueryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/querymodel/TPSVMQueryModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/FileInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/FileInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/NetInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/NetInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/TPSQueueVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/model/viewmodel/TPSQueueVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/ClientInTPSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/ClientInTPSService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/LogAnalysisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/LogAnalysisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/TPSService.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/service/TPSService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/uploadFile/CustomMultipartResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/uploadFile/CustomMultipartResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/utilities/TXTFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/utilities/TXTFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/clienttps.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/clienttps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/jquery.vmap.world.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/plugins/jquery.vmap.world.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/tps.js" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/static/js/tps.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/clientIn.html" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/clientIn.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/clientInTPS.html" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/clientInTPS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loganalysis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/index_BackUp.html" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/templates/index_BackUp.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/LoganalysisApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+            <state relative-caret-position="100">
+              <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding>
                 <element signature="e#255#256#0" expanded="true" />
                 <element signature="e#328#329#0" expanded="true" />
@@ -70,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/loganalysis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            <state relative-caret-position="234">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -100,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="134" />
     <option name="y" value="79" />
     <option name="width" value="1750" />
@@ -111,7 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -120,22 +93,79 @@
               <item name="Work" type="b2602c69:ProjectViewProjectNode" />
               <item name="Work" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zd" type="462c0819:PsiDirectoryNode" />
+              <item name="ocg" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zd" type="462c0819:PsiDirectoryNode" />
+              <item name="ocg" type="462c0819:PsiDirectoryNode" />
+              <item name="loganalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/loganalysis" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
@@ -163,16 +193,19 @@
       <workItem from="1581299816776" duration="280000" />
       <workItem from="1581300157745" duration="538000" />
       <workItem from="1589249480837" duration="193000" />
+      <workItem from="1594962932739" duration="90000" />
+      <workItem from="1594963791524" duration="291000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1011000" />
+    <option name="totallyTimeSpent" value="1392000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="134" y="79" width="1750" height="980" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28402367" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -192,14 +225,14 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.31663114" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.3656805" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.26545843" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="8" visible="true" weight="0.32889125" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,21 +243,21 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/loganalysis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loganalysis/src/main/java/zd/ocg/loganalysis/LoganalysisApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="3" column="68" selection-start-line="3" selection-start-column="68" selection-end-line="3" selection-end-column="68" />
+        <state relative-caret-position="100">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding>
             <element signature="e#255#256#0" expanded="true" />
             <element signature="e#328#329#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/loganalysis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -278,6 +311,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>Work</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
