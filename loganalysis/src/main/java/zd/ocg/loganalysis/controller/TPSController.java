@@ -97,7 +97,7 @@ public class TPSController {
 //        Object tpsData = session.getAttribute("tpsData");
 //        if (tpsData == null) {
 //            //   String fileName = "C:\\Users\\Administrator\\Desktop\\TPSQueue.log";
-//            list = tPSService.statisticsAnalysis(queryModel.getFilePath());
+//            list = tPSService.statisticsAnalysis(queryModel.getFilePath();
 //            session.setAttribute("tpsData", list);
 //        } else {
 //            list = (List<TPSVM>) tpsData;
