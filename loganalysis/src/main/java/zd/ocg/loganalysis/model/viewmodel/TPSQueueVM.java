@@ -6,8 +6,8 @@ import java.time.format.DateTimeFormatter;
 public class TPSQueueVM {
     private int id;
     private LocalDateTime logTime;
-    private String EnqueueOrDequeue;
-    private int lineCout;
+    private String enqueueOrDequeue;
+    private int lineCount;
 
     private NetInfo netInfo;
 
@@ -28,20 +28,20 @@ public class TPSQueueVM {
     }
 
 
-    public int getLineCout() {
-        return lineCout;
+    public int getLineCount() {
+        return lineCount;
     }
 
-    public void setLineCout(int lineCout) {
-        this.lineCout = lineCout;
+    public void setLineCount(int lineCount) {
+        this.lineCount = lineCount;
     }
 
     public String getEnqueueOrDequeue() {
-        return EnqueueOrDequeue;
+        return enqueueOrDequeue;
     }
 
     public void setEnqueueOrDequeue(String enqueueOrDequeue) {
-        EnqueueOrDequeue = enqueueOrDequeue;
+        this.enqueueOrDequeue = enqueueOrDequeue;
     }
 
 

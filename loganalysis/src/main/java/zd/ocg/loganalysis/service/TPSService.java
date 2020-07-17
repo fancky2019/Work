@@ -46,7 +46,7 @@ public class TPSService {
                     LocalDateTime logTime = LocalDateTime.parse(logTimeStr, DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss:SSS"));
                     //66
                     int colonIndex = p.indexOf(":", 66);
-                    String enqueueOrDequeue = p.substring(66, colonIndex);
+                    String enqueueOrDequeue = p.substring(66+1, colonIndex);
 
 
                     switch (enqueueOrDequeue) {
@@ -67,7 +67,7 @@ public class TPSService {
                     tPSQueueVM.setId(++id);
                     tPSQueueVM.setLogTime(logTime);
                     tPSQueueVM.setEnqueueOrDequeue(enqueueOrDequeue);
-                    tPSQueueVM.setLineCout(currentLineCout);
+                    tPSQueueVM.setLineCount(currentLineCout);
                     tPSQueueVM.setNetInfo(netInfo);
                     tPSQueueData.add(tPSQueueVM);
                 } catch (Exception ex) {
@@ -97,13 +97,12 @@ public class TPSService {
         List<TPSQueueVM> enQueueList = listTPSQueueVM.stream().filter(p -> p.getEnqueueOrDequeue().equals("Enqueue")).collect(Collectors.toList());
         List<TPSQueueVM> deQueueList = listTPSQueueVM.stream().filter(p -> p.getEnqueueOrDequeue().equals("Dequeue")).collect(Collectors.toList());
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss:SSS");
-
         //ageList.contains(s.getAge())
         enQueueList.forEach(p ->
         {
             TPSVM tpsvm = new TPSVM();
             tpsvm.setLogTime(p.getLogTime().format(dateTimeFormatter));
-            tpsvm.settPSQueueCount(p.getLineCout());
+            tpsvm.settPSQueueCount(p.getLineCount());
             tpsvm.setEnqueueTime(p.getLogTime().format(dateTimeFormatter));
             tpsvm.setOrderType(p.getNetInfo().getOrderType());
             tpsvm.setCustomerNo(p.getNetInfo().getCustomerNo());
