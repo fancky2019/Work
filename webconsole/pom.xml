@@ -8,8 +8,8 @@
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>zd</groupId>
-    <artifactId>fancky</artifactId>
+    <groupId>zd.fancky</groupId>
+    <artifactId>webconsole</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>webconsole</name>
     <description>web console</description>
