@@ -16,7 +16,8 @@ logging:
 spring:
   application:
     name: LogAnalysis
-
+  resources:
+    static-locations: classpath:/static/, classpath:/templates/
   thymeleaf:
   #      view:
   #        prefix: /
