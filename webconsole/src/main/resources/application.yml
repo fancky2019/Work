@@ -1,0 +1,45 @@
+server:
+  port: 9091
+#公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
+#mapper路径和实体对象路径
+#mybatis:
+#  #  Mapper文件存放的位置
+#  mapperLocations: classpath:mapper/**/*.xml
+#  #  实体类所在的包
+#  typeAliasesPackage: com.valvulas.fancky.model.entity
+
+logging:
+  #  path没起作用
+  path: /log/
+  file: log.log
+#开发配置
+spring:
+  application:
+    name: LogAnalysis
+
+  thymeleaf:
+  #      view:
+  #        prefix: /
+  #        suffix: .html
+  #   #  html
+  #     prefix: classpath:/templates/
+  #      #图片
+  #    resources:
+  #      static-locations: classpath:/
+  #  datasource:
+  #    #注意冒号有空格
+  ##    url: jdbc:mysql://39.97.186.80:3307/valvulas?useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  #    url: jdbc:mysql://127.0.0.1:3306/valvulas?useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    username: root
+  #    password: 123456# 上传文件总的最大值
+
+  #上传文件大小设置，否则前端报错
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+fileName:
+  xlfile: D://upload
+

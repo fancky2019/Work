@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Work.iml" filepath="$PROJECT_DIR$/.idea/Work.iml" />
       <module fileurl="file://$PROJECT_DIR$/loganalysis/loganalysis.iml" filepath="$PROJECT_DIR$/loganalysis/loganalysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/webconsole/webconsole.iml" filepath="$PROJECT_DIR$/webconsole/webconsole.iml" />
     </modules>
   </component>
 </project>
