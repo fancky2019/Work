@@ -2,39 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad420f68-6b1f-4762-96c1-cb9ecb04b24e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/inspinia精简.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loganalysis/ocg.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/configuration/MultipartResolverConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/ClientInTPSController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/LogAnalysisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/TPSController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/ClientInLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/ClientInTPS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/StatisticsAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/querymodel/QueryModelBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/querymodel/TPSVMQueryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/viewmodel/NetInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/viewmodel/TPSQueueVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/model/viewmodel/TPSVM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/service/ClientInTPSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/service/LogAnalysisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/service/TPSService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/uploadFile/CustomMultipartResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/uploadFile/FileUploadProgressListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/utilities/TXTFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/static/js/clienttps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/static/js/echarts.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/static/js/fileupload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/static/js/tps.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/java/zd/fancky/loganalysis/configuration/MultipartResolverConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/fancky/loganalysis/configuration/MultipartResolverConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/FileUpLoadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/FileUpLoadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/TPCController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/src/main/resources/templates/fileupload/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/src/main/resources/templates/fileupload/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/loganalysis/target/" />
     <ignored path="$PROJECT_DIR$/webconsole/target/" />
@@ -75,21 +44,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="241">
+              <caret line="150" column="74" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
               <folding>
-                <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/LogAnalysisController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="250">
+              <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -206,6 +168,68 @@
             <path>
               <item name="Work" type="b2602c69:ProjectViewProjectNode" />
               <item name="Work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Work" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Work" type="462c0819:PsiDirectoryNode" />
+              <item name="webconsole" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="clientin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -335,13 +359,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20334000" />
+    <option name="totallyTimeSpent" value="23019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20895523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -352,7 +376,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -795,30 +819,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html">
+    <entry file="file://$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/LogAnalysisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="250">
+          <caret line="33" column="35" lean-forward="true" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
           <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webconsole/src/main/java/zd/fancky/webconsole/controller/LogAnalysisController.java">
+    <entry file="file://$PROJECT_DIR$/webconsole/src/main/resources/templates/clientin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="241">
+          <caret line="150" column="74" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
