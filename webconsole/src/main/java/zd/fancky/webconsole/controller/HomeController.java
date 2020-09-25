@@ -20,6 +20,10 @@ public class HomeController {
 
     @RequestMapping("")
     public String index() {
+
+        logger.info("info");
+        logger.debug("debug");
+        logger.error("error");
 //
 //        //D:\fancky\Git\Java\Work\loganalysis
 //        String path = System.getProperty("user.dir");
