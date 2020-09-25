@@ -389,7 +389,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebConsoleApplication">
+  <component name="RunManager" selected="Spring Boot.LoganalysisApplication">
     <configuration name="webconsole [package]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />

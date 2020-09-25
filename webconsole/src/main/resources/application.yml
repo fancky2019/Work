@@ -8,11 +8,10 @@ server:
 #  #  实体类所在的包
 #  typeAliasesPackage: com.valvulas.fancky.model.entity
 
+
 logging:
-  #  path没起作用
-  path: /log/
-  file: log.log
-#开发配置
+  config: classpath:log4j2.xml
+##开发配置
 spring:
   application:
     name: LogAnalysis
