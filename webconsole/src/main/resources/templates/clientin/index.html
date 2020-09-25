@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -33,8 +32,8 @@
 
                 <!--简介-->
                 <li class="nav-header" style="padding: 0px 0px">
-                    <div  style="display: inline-block;">
-                        <img alt="image" class="rounded-circle" style="padding:10px;"  src="img/cat.png"/>
+                    <div style="display: inline-block;">
+                        <img alt="image" class="rounded-circle" style="padding:10px;" src="../img/cat.png"/>
 
                     </div>
                     <div style="display: inline-block;">
@@ -53,7 +52,7 @@
 
         <!--头部登录-->
         <div class="row border-bottom">
-            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i>
                     </a>
@@ -71,114 +70,85 @@
         </div>
 
         <!--菜单项目信息-->
-        <div class="row  border-bottom white-bg dashboard-header">
+<!--        <div class="row  border-bottom white-bg dashboard-header">-->
 
-            <div class="col-md-12">
-                <h2 id="menuDirectory">Welcome Amelia</h2>
-                <!--<small>You have 42 messages and 6 notifications.</small>-->
+<!--            <div class="col-md-12">-->
+<!--                <h2 id="menuDirectory">Welcome Amelia</h2>-->
+<!--                &lt;!&ndash;<small>You have 42 messages and 6 notifications.</small>&ndash;&gt;-->
 
-            </div>
-            <!--<div class="col-md-6">-->
+<!--            </div>-->
+<!--            &lt;!&ndash;<div class="col-md-6">&ndash;&gt;-->
 
-        </div>
+<!--        </div>-->
 
         <!--页面主体内容-->
         <div class="row">
             <div class="col-lg-12">
-                <div class="wrapper wrapper-content">
+                <div  class="wrapper wrapper-content animated fadeInRight">
+
+
                     <div class="row">
-
                         <div class="col-lg-12">
-<!--                            <div class="ibox ">-->
-<!--                                <div class="ibox-title">-->
-<!--                                    <h5>Alpha project</h5>-->
-<!--                                    <div class="ibox-tools">-->
-<!--                                        <a class="collapse-link" href="">-->
-<!--                                            <i class="fa fa-chevron-up"></i>-->
-<!--                                        </a>-->
-
-<!--                                    </div>-->
-<!--                                </div>-->
-
-<!--                                <div class="ibox-content inspinia-timeline">-->
-
-<!--                                    <div class="timeline-item">-->
-<!--                                        <div class="row">-->
-<!--                                            <div class="col-4 date">-->
-<!--                                                <i class="fa fa-briefcase"></i>-->
-<!--                                                6:00 am-->
-<!--                                                <br/>-->
-<!--                                                <small class="text-navy">2 hour ago</small>-->
-<!--                                            </div>-->
-<!--                                            <div class="col content no-top-border">-->
-<!--                                                <p class="m-b-xs"><strong>Meeting</strong></p>-->
-
-<!--                                                <p>Conference on the sales results for the previous year. Monica please-->
-<!--                                                    examine sales trends in marketing and products. Below please find-->
-<!--                                                    the current status of the-->
-<!--                                                    sale.</p>-->
-
-<!--                                                <p><span data-diameter="40" class="updating-chart">5,3,9,6,5,9,7,3,5,2,5,3,9,6,5,9,4,7,3,2,9,8,7,4,5,1,2,9,5,4,7,2,7,7,3,5,2</span>-->
-<!--                                                </p>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
+                            <div class="ibox ">
+                                <div class="ibox-content">
+                                    <div id="top" >
 
 
-<!--                                </div>-->
-<!--                                -->
-<!--                                -->
-<!--                                -->
-<!--                            </div>-->
+                                        <input type="file" id="uploadFile" style="display: none;" multiple="multiple"
+                                               accept=".log,.txt"/>
+                                        <input id="selectFilePath" readonly>
+                                        <input id="uploadPath" type="hidden">
+                                        <input type="button" id="openFile" value="选择ClientIn日志文件">
+                                        <input id="upload" type="button" value="上传"/>
 
-                            <!--    <div class="app-title">-->
-                            <div id="top" class="ibox" style="height: 70px">
+                                        <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
+                                        <select id="statisticsKind">
+                                            <option value="second">second</option>
+                                            <option value="minute">minute</option>
+                                            <option value="hour">hour</option>
+                                        </select>
+                                        <button id="statisticsAnalysis"> 统计</button>
+                                    </div>
+                                    </div>
+                                </div>
 
-
-                                <input type="file" id="uploadFile" style="display: none;" multiple="multiple" accept=".log,.txt"/>
-                                <input id="selectFilePath" readonly>
-                                <input id="uploadPath" type="hidden">
-                                <input type="button" id="openFile" value="选择ClientIn日志文件">
-                                <input id="upload" type="button" value="上传"/>
-
-
-                                <!--    <input id="uploadFile" type="file" />-->
-                                <!--    <input id="upload" type="button" value="上传"  />-->
-                                <!--    <input id="uploadPath" type="hidden">-->
-
-
-                                <label>&nbsp;&nbsp;&nbsp;&nbsp;统计时长:</label>
-                                <select id="statisticsKind">
-                                    <option value="second">second</option>
-                                    <option value="minute">minute</option>
-                                    <option value="hour">hour</option>
-                                </select>
-                                <button id="statisticsAnalysis"> 统计</button>
-                            </div>
-                            <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-                            <!--                <div id="main" style="width: 1200px;height:600px;">-->
-
-                            <div id="main" class="ibox" style="height:600px;">
 
                             </div>
 
                         </div>
 
-                    </div>
-                </div>
 
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="ibox ">
+                                <div class="ibox-content">
+                                    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+                                    <!--                <div id="main" style="width: 1200px;height:600px;">-->
+
+                                    <div id="main"  style="height:600px;">
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
 
 
-
         <!--footer信息-->
         <div class="footer">
-            <div class="float-right">
-                10GB of <strong>250GB</strong> Free.
-            </div>
+<!--            <div class="float-right">-->
+<!--                10GB of <strong>250GB</strong> Free.-->
+<!--            </div>-->
             <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2018
+                <strong>Copyright</strong> Fancky Company &copy; 2020-2025
             </div>
         </div>
 
