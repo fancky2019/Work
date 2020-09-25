@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.controller;
+package zd.fancky.webconsole.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,10 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import zd.fancky.loganalysis.model.PageData;
-import zd.fancky.loganalysis.model.viewmodel.TPSVM;
-import zd.fancky.loganalysis.model.querymodel.TPSVMQueryModel;
-import zd.fancky.loganalysis.service.TPSService;
+import zd.fancky.webconsole.model.querymodel.TPSVMQueryModel;
+import zd.fancky.webconsole.model.viewmodel.TPSVM;
+import zd.fancky.webconsole.model.vo.PageData;
+import zd.fancky.webconsole.service.TPSService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-//@RequestMapping("/ClientInTPS")
+@RequestMapping("/ClientInTPS")
 public class TPSController {
 
     Logger logger = LoggerFactory.getLogger(TPSController.class);

@@ -1,14 +1,17 @@
-package zd.fancky.loganalysis.service;
+package zd.fancky.webconsole.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import zd.fancky.loganalysis.model.ClientInLog;
-import zd.fancky.loganalysis.utilities.TXTFile;
+import zd.fancky.webconsole.model.ClientInLog;
+import zd.fancky.webconsole.utilities.TXTFile;
+
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 

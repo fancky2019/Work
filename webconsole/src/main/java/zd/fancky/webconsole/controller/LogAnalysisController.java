@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.controller;
+package zd.fancky.webconsole.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,9 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import zd.fancky.loganalysis.model.ClientInLog;
-import zd.fancky.loganalysis.service.LogAnalysisService;
-
+import zd.fancky.webconsole.model.ClientInLog;
+import zd.fancky.webconsole.service.LogAnalysisService;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,21 +23,22 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Controller
-//@RequestMapping("/loganalysis")
+@RequestMapping("/loganalysis")
+//@RequestMapping("")
 public class LogAnalysisController {
 
     @Autowired
     LogAnalysisService logAnalysisService;
 
 
-    @RequestMapping("")
+    @RequestMapping("/loganalysis")
     public String index() {
         return "index";
     }
 
     @RequestMapping("/clientIn")
     public String clientIn() {
-        return "clientIn";
+        return "clientin/index";
     }
 
     @RequestMapping("/getData")

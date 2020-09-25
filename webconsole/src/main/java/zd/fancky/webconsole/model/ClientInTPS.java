@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.model;
+package zd.fancky.webconsole.model;
 
 public class ClientInTPS {
     private String logTime;

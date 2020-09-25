@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.model.viewmodel;
+package zd.fancky.webconsole.model.viewmodel;
 
 public class TPSVM {
     private String logTime;

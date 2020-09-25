@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.model.querymodel;
+package zd.fancky.webconsole.model.querymodel;
 
 public class QueryModelBase {
     private Integer skip;

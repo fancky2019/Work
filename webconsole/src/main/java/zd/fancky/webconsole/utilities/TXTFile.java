@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.utilities;
+package zd.fancky.webconsole.utilities;
 
 
 import java.io.*;

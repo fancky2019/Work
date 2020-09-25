@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.model;
+package zd.fancky.webconsole.model;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

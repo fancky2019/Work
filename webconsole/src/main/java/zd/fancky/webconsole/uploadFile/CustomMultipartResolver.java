@@ -1,4 +1,4 @@
-package zd.fancky.loganalysis.uploadFile;
+package zd.fancky.webconsole.uploadFile;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUpload;

@@ -1,21 +1,24 @@
-package zd.fancky.loganalysis.controller;
+package zd.fancky.webconsole.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import zd.fancky.loganalysis.model.ClientInTPS;
-import zd.fancky.loganalysis.service.ClientInTPSService;
-import zd.fancky.loganalysis.service.LogAnalysisService;
+import zd.fancky.webconsole.model.ClientInTPS;
+import zd.fancky.webconsole.service.ClientInTPSService;
+import zd.fancky.webconsole.service.LogAnalysisService;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
  * vali:github:https://github.com/pratikborsadiya/vali-admin
  */
 @Controller
-//@RequestMapping("/ClientInTPS")
+@RequestMapping("/ClientInTPS")
 public class ClientInTPSController {
 
 
