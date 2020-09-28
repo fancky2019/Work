@@ -1,5 +1,8 @@
 package zd.fancky.webconsole.controller;
 
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.ResourceUtils;
@@ -11,11 +14,13 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import zd.fancky.webconsole.model.ClientInLog;
 import zd.fancky.webconsole.service.LogAnalysisService;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -26,6 +31,8 @@ import java.util.concurrent.TimeUnit;
 @RequestMapping("/loganalysis")
 //@RequestMapping("")
 public class LogAnalysisController {
+
+    private static final Logger logger = LoggerFactory.getLogger(LogAnalysisController.class);
 
     @Autowired
     LogAnalysisService logAnalysisService;
@@ -38,6 +45,11 @@ public class LogAnalysisController {
 
     @RequestMapping("/clientIn")
     public String clientIn() {
+//        //每毫秒可以打印15条log.
+//        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
+//        for (int i = 0; i < 9999; i++) {
+//            logger.info(MessageFormat.format("{0} : i - {1}", LocalDateTime.now().format(dateTimeFormatter), i));
+//        }
         return "clientin/index";
     }
 
