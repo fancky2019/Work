@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 @Controller
-@RequestMapping("/loganalysis")
+//@RequestMapping("")
 //@RequestMapping("")
 public class LogAnalysisController {
 
@@ -43,7 +43,7 @@ public class LogAnalysisController {
         return "index";
     }
 
-    @RequestMapping("/clientIn")
+    @RequestMapping("/ClientIn")
     public String clientIn() {
 //        //每毫秒可以打印15条log.
 //        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
@@ -99,9 +99,13 @@ public class LogAnalysisController {
     }
 
 
+    /*
+    @RequestParam(value="file", required=false).要设置required=false不然报下面错误
+    Required request part 'file' is not present
+     */
     @PostMapping("/upload")
     @ResponseBody
-    public String fileUpload(@RequestParam("file") MultipartFile srcFile, RedirectAttributes redirectAttributes) {
+    public String fileUpload(@RequestParam(value="file") MultipartFile srcFile, RedirectAttributes redirectAttributes) {
         //前端没有选择文件，srcFile为空
         if (srcFile.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "请选择一个文件");

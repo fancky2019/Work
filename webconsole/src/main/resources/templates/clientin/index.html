@@ -125,31 +125,45 @@
                                     <div id="top">
 
                                         <div class="form-group row">
-                                            <div class="col-lg-4 custom-file">
-                                                <input id="uploadFile" type="file" class="custom-file-input"
-                                                       accept=".log,.txt">
-                                                <label for="uploadFile" class="custom-file-label">选择ClientIn文件...</label>
+
+
+                                            <div class="col-lg-4">
+                                                <input type="file" id="uploadFile" style="display: none;"
+                                                       multiple="multiple"
+                                                       accept=".log,.txt"/>
+                                                <input id="selectFilePath" class="form-control">
+                                                <input id="uploadPath" type="hidden">
                                             </div>
+
+                                            <div >
+                                                <input type="button" id="openFile" class="btn btn-w-m btn-default" value="选择ClientIn日志文件">
+                                            </div>
+
                                             <div class="col-lg-1">
                                                 <button type="button" id="upload" class="btn btn-primary ">上传</button>
-                                                <!--                                            <label class="col-lg-2 col-form-label">Password</label>-->
                                             </div>
 
 
                                             <div class="col-lg-1">
                                                 <select name="status" id="statisticsKind" class="form-control">
-
                                                     <option value="second">second</option>
                                                     <option value="minute">minute</option>
                                                     <option value="hour">hour</option>
-
                                                 </select>
                                             </div>
-                                            <button type="button" class="col-lg-1 btn btn-primary btn-sm">统计</button>
+
+                                            <div class="col-lg-1">
+                                            <button type="button" id="statisticsAnalysis" class="btn btn-primary ">统计</button>
+                                            </div>
+
                                             <div class="col-lg-6">
 
                                             </div>
+
                                         </div>
+
+
+
                                     </div>
                                 </div>
                             </div>
@@ -215,20 +229,6 @@
 
 <script src="../js/echarts.min.js"></script>
 <script src="../js/index.js"></script>
-<script>
-    $(document).ready(function () {
-        // setTimeout(function() {
-        //     toastr.options = {
-        //         closeButton: true,
-        //         progressBar: true,
-        //         showMethod: 'slideDown',
-        //         timeOut: 4000
-        //     };
-        //     toastr.success('Responsive Admin Theme', 'Welcome to INSPINIA');
-        //
-        // }, 1300);
 
-    });
-</script>
 </body>
 </html>

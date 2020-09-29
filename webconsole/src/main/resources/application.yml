@@ -14,7 +14,7 @@ logging:
 ##开发配置
 spring:
   application:
-    name: LogAnalysis
+    name: WebConsole
   resources:
     static-locations: classpath:/static/, classpath:/templates/
   thymeleaf:
@@ -36,11 +36,14 @@ spring:
 
 
 
+#springboot:2.1版本要把  enabled: fasle
   #上传文件大小设置，否则前端报错
   servlet:
     multipart:
+#      enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
+
 
 fileName:
   xlfile: D://upload
