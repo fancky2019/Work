@@ -75,6 +75,15 @@ public class HomeController {
         menu.setUrl("/TPS");
         menu.setIcoName("");
         list.add(menu);
+       // /clientIn
+        menu = new Menus();
+        menu.setId(7);
+        menu.setParentID(1);
+        menu.setMenuName("ClientIn");
+        menu.setDisplayName("ClientIn");
+        menu.setUrl("/ClientIn");
+        menu.setIcoName("");
+        list.add(menu);
 
         menu = new Menus();
         menu.setId(4);
@@ -103,6 +112,8 @@ public class HomeController {
         menu.setUrl("/AccountManager");
         menu.setIcoName("");
         list.add(menu);
+
+
 
         return list;
     }

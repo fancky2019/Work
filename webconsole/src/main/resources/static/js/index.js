@@ -180,11 +180,9 @@ let statisticsAnalysis = function () {
 };
 
 $("#statisticsAnalysis").click(function (e) {
-
     statisticsAnalysis();
 });
 $("#statisticsKind").change(function () {
-
     statisticsAnalysis();
 });
 
@@ -192,10 +190,14 @@ $("#upload").click(function (e) {
     let type = "file";          //后台接收时需要的参数名称，自定义即可
     let id = "uploadFile";            //即input的id，用来寻找值
     let formData = new FormData();
+    var file= $("#" + id)[0].files[0];
+    debugger;
     formData.append(type, $("#" + id)[0].files[0]);    //生成一对表单属性
+
+
     $.ajax({
         type: "POST",           //因为是传输文件，所以必须是post
-        url: '/upload',         //对应的后台处理类的地址
+        url: 'upload',         //对应的后台处理类的地址
         data: formData,
         processData: false,
         contentType: false,
@@ -218,15 +220,12 @@ $("#openFile").click(function () {
 
 
 $("#uploadFile").change(function () {
-
-    // $("#selectFilePath").val($("#uploadFile").val());
-
-    // $("#selectFilePath").val($("#uploadFile").val());
-    // let file = $("#uploadFile");
+    $("#selectFilePath").val($("#uploadFile").val());
     let fullName = $("#uploadFile").val();
     let fileNames = fullName.split("\\");
     let fileName = fileNames[fileNames.length - 1]
     $("#selectFilePath").val(fileName);
+
 });
 
 
