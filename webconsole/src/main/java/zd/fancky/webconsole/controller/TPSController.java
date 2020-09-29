@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/ClientInTPS")
+@RequestMapping("")
 public class TPSController {
 
     Logger logger = LoggerFactory.getLogger(TPSController.class);
@@ -25,9 +25,9 @@ public class TPSController {
     @Autowired
     private TPSService tPSService;
 
-    @RequestMapping("/tps")
+    @RequestMapping("/TPS")
     public String clientInTPS() {
-        return "tps";
+        return "tps/index";
     }
 
     @RequestMapping("/tpsData1")
