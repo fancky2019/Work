@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.web.bind.annotation.ResponseBody;
+import zd.fancky.webconsole.model.ClientInTPS;
 import zd.fancky.webconsole.model.po.Menus;
 import zd.fancky.webconsole.model.po.User;
 
@@ -58,12 +59,14 @@ public class HomeController {
         menu.setIcoName("");
         list.add(menu);
 
+
+        // /clientIn
         menu = new Menus();
         menu.setId(2);
         menu.setParentID(1);
-        menu.setMenuName("FileUpLoad");
-        menu.setDisplayName("FileUpLoad");
-        menu.setUrl("/FileUpLoad");
+        menu.setMenuName("ClientIn");
+        menu.setDisplayName("ClientIn");
+        menu.setUrl("/ClientIn");
         menu.setIcoName("");
         list.add(menu);
 
@@ -75,18 +78,20 @@ public class HomeController {
         menu.setUrl("/TPS");
         menu.setIcoName("");
         list.add(menu);
-       // /clientIn
+
+        // /clientIn
         menu = new Menus();
-        menu.setId(7);
+        menu.setId(4);
         menu.setParentID(1);
-        menu.setMenuName("ClientIn");
-        menu.setDisplayName("ClientIn");
-        menu.setUrl("/ClientIn");
+        menu.setMenuName("ClientInTPS");
+        menu.setDisplayName("ClientInTPS");
+        menu.setUrl("/ClientInTPS");
         menu.setIcoName("");
         list.add(menu);
 
+
         menu = new Menus();
-        menu.setId(4);
+        menu.setId(5);
         menu.setParentID(0);
         menu.setMenuName("UserManager");
         menu.setDisplayName("UserManager");
@@ -96,7 +101,7 @@ public class HomeController {
 
 
         menu = new Menus();
-        menu.setId(5);
+        menu.setId(6);
         menu.setParentID(0);
         menu.setMenuName("SystemManager");
         menu.setDisplayName("SystemManager");
@@ -105,7 +110,7 @@ public class HomeController {
         list.add(menu);
 
         menu = new Menus();
-        menu.setId(6);
+        menu.setId(7);
         menu.setParentID(5);
         menu.setMenuName("AccountManager");
         menu.setDisplayName("AccountManager");

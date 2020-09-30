@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  * vali:github:https://github.com/pratikborsadiya/vali-admin
  */
 @Controller
-@RequestMapping("/ClientInTPS")
+@RequestMapping("")
 public class ClientInTPSController {
 
 
@@ -28,9 +28,9 @@ public class ClientInTPSController {
     @Autowired
     ClientInTPSService clientInTPSService;
 
-    @RequestMapping("/clientInTPS")
+    @RequestMapping("/ClientInTPS")
     public String clientInTPS() {
-        return "clientInTPS";
+        return "clientintps/index";
     }
 
     @RequestMapping("/clientInTPSStatisticsAnalysis")
