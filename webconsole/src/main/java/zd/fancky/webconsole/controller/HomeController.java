@@ -93,30 +93,23 @@ public class HomeController {
         menu = new Menus();
         menu.setId(5);
         menu.setParentID(0);
-        menu.setMenuName("UserManager");
-        menu.setDisplayName("UserManager");
-        menu.setUrl("/UserManager");
+        menu.setMenuName("TT");
+        menu.setDisplayName("TT");
+        menu.setUrl("/tt");
         menu.setIcoName("");
         list.add(menu);
-
 
         menu = new Menus();
         menu.setId(6);
         menu.setParentID(0);
-        menu.setMenuName("SystemManager");
-        menu.setDisplayName("SystemManager");
-        menu.setUrl("#");
+        menu.setMenuName("PSHK");
+        menu.setDisplayName("PSHK");
+        menu.setUrl("/pshk");
         menu.setIcoName("");
         list.add(menu);
 
-        menu = new Menus();
-        menu.setId(7);
-        menu.setParentID(5);
-        menu.setMenuName("AccountManager");
-        menu.setDisplayName("AccountManager");
-        menu.setUrl("/AccountManager");
-        menu.setIcoName("");
-        list.add(menu);
+
+
 
 
 
