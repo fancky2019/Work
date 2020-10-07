@@ -8,10 +8,12 @@ server:
 #  #  实体类所在的包
 #  typeAliasesPackage: com.valvulas.fancky.model.entity
 
+#默认logback日志info
 logging:
-  #  path没起作用
-  path: /log/
-  file: log.log
+  file:
+    name: loganalysis/logs/log.log  #指定在子项目目录下
+#    name: log.log    #打印在workspace目录下
+
 #开发配置
 spring:
   application:
