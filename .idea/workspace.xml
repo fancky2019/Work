@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad420f68-6b1f-4762-96c1-cb9ecb04b24e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/loganalysis/src/main/java/zd/fancky/loganalysis/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loganalysis/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loganalysis/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webconsole/src/main/resources/templates/clientintps/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/webconsole/src/main/resources/templates/clientintps/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="ad420f68-6b1f-4762-96c1-cb9ecb04b24e" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/loganalysis/target/" />
     <ignored path="$PROJECT_DIR$/webconsole/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loganalysis/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="255">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -339,12 +334,12 @@
       <workItem from="1601269383300" duration="3987000" />
       <workItem from="1601274525284" duration="1174000" />
       <workItem from="1601347681314" duration="25813000" />
-      <workItem from="1602032947143" duration="3077000" />
+      <workItem from="1602032947143" duration="3308000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61860000" />
+    <option name="totallyTimeSpent" value="62091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -361,7 +356,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39869988" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -828,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loganalysis/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="255">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
