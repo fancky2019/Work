@@ -48,10 +48,11 @@ public class FileUpLoadController {
         return "fileupload/index";
     }
 
-
+  //  PicUploadResult uploadManyImg(MultipartFile[] uploadFile, HttpServletRequest request);
+    //单文件上传，多个文件上传，参数是个数组
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     @ResponseBody
-    public String upload(@RequestParam(value = "file") MultipartFile file) {
+    public String upload(@RequestParam(value = "file") MultipartFile file, HttpServletRequest request) {
         try {
             LocalDateTime localDateTime = LocalDateTime.now();
             String dateStr = localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
@@ -64,6 +65,8 @@ public class FileUpLoadController {
                 destFile.mkdirs();
             }
 
+            //获取body中的参数
+//            String value = (String)request.getAttribute("paramName");
             //获取文件名称
             String sourceFileName = file.getOriginalFilename();
             //写入目的文件
