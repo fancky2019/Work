@@ -46,7 +46,7 @@ public class TPSService {
                     LocalDateTime logTime = LocalDateTime.parse(logTimeStr, DateTimeFormatter.ofPattern("yyyyMMdd HH:mm:ss:SSS"));
                     //66
                     int colonIndex = p.indexOf(":", 66);
-                    String enqueueOrDequeue = p.substring(66+1, colonIndex);
+                    String enqueueOrDequeue = p.substring(66 + 1, colonIndex);
 
 
                     switch (enqueueOrDequeue) {

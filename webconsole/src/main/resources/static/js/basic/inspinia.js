@@ -150,7 +150,6 @@ $(document).ready(function () {
 });
 
 
-
 // Fixed Sidebar
 $(window).bind("load", function () {
     if ($("body").hasClass('fixed-sidebar')) {
@@ -189,7 +188,7 @@ function fix_height() {
 $(window).bind("load resize scroll", function () {
 
     // Full height of sidebar
-    setTimeout(function(){
+    setTimeout(function () {
         if (!$("body").hasClass('body-small')) {
             fix_height();
         }

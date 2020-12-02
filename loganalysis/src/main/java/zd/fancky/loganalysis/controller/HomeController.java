@@ -16,8 +16,7 @@ public class HomeController {
     private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 
     @RequestMapping("/logTest")
-    public  void logTest()
-    {
+    public void logTest() {
         //Spring Boot默认的日志级别为INFO
         //日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL
         logger.debug("debug");

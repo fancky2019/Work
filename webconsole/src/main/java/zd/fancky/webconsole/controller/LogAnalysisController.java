@@ -105,7 +105,7 @@ public class LogAnalysisController {
      */
     @PostMapping("/upload")
     @ResponseBody
-    public String fileUpload(@RequestParam(value="file") MultipartFile srcFile, RedirectAttributes redirectAttributes) {
+    public String fileUpload(@RequestParam(value = "file") MultipartFile srcFile, RedirectAttributes redirectAttributes) {
         //前端没有选择文件，srcFile为空
         if (srcFile.isEmpty()) {
             redirectAttributes.addFlashAttribute("message", "请选择一个文件");
