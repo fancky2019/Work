@@ -84,7 +84,7 @@
             <appender-ref ref="RollingFileInfo"/>
             <!--            <appender-ref ref="RollingFileWarn"/>-->
             <!--            <appender-ref ref="RollingFileError"/>-->
-<!--            <logger name="org.thymeleaf" level="INFO"/>-->
+            <!--            <logger name="org.thymeleaf" level="INFO"/>-->
         </AsyncRoot>
 
         <!--        同步-->

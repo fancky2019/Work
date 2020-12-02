@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.springframework.web.bind.annotation.ResponseBody;
 import zd.fancky.webconsole.model.ClientInTPS;
 import zd.fancky.webconsole.model.po.Menus;
@@ -107,10 +108,6 @@ public class HomeController {
         menu.setUrl("/pshk");
         menu.setIcoName("");
         list.add(menu);
-
-
-
-
 
 
         return list;

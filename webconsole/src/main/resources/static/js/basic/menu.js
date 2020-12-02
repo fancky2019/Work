@@ -112,17 +112,6 @@
 // // (function () {})();
 
 
-
-
-
-
-
-
-
-
-
-
-
 $(function () {
     "use strict";
     menusFuncation();
@@ -207,15 +196,14 @@ function activeNav() {
         // console.log($("#" + id).closest('li').attr("id"));
         // let parentID = $("#" + id).closest('li').attr("id");
         let parentID = $("#" + id).parent('ul').parent('li').attr("id");
-        let parentStr="";
-        if(!isEmpty(parentID))
-        {
-            parentStr=parentID+" / ";
+        let parentStr = "";
+        if (!isEmpty(parentID)) {
+            parentStr = parentID + " / ";
             console.log(parentID);
             $("#" + parentID).addClass('active');
         }
 
-        $("#menuDirectory").html(parentStr+id);
+        $("#menuDirectory").html(parentStr + id);
         // $("#" + id).closest('ul').removeClass('collapse');
         // $("#" + parentID).addClass('active');
         $("#" + id).addClass('active');

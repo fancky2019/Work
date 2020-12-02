@@ -4,26 +4,32 @@ package zd.fancky.webconsole.controller;
 import org.apache.tomcat.jni.FileInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import zd.fancky.webconsole.model.entity.newClasses.FeedBack;
 import zd.fancky.webconsole.model.viewmodel.TPSVM;
 import zd.fancky.webconsole.model.vo.MessageResult;
+import zd.fancky.webconsole.service.NewClassesService;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 
 @Controller
 @RequestMapping("/FileUpLoad")
 public class FileUpLoadController {
 
     private static final Logger logger = LoggerFactory.getLogger(FileUpLoadController.class);
-
+    @Autowired    //spring mvc 的IOC
+    private NewClassesService newClassesService;
 
     @RequestMapping("")
     public String index() {
@@ -48,7 +54,7 @@ public class FileUpLoadController {
         return "fileupload/index";
     }
 
-  //  PicUploadResult uploadManyImg(MultipartFile[] uploadFile, HttpServletRequest request);
+    //  PicUploadResult uploadManyImg(MultipartFile[] uploadFile, HttpServletRequest request);
     //单文件上传，多个文件上传，参数是个数组
     @RequestMapping(value = "/upload", method = RequestMethod.POST)
     @ResponseBody
@@ -101,6 +107,82 @@ public class FileUpLoadController {
             return "";
         }
     }
+
+
+    //  PicUploadResult uploadManyImg(MultipartFile[] uploadFile, HttpServletRequest request);
+    //单文件上传，多个文件上传，参数是个数组
+    @RequestMapping(value = "/uploadFileAndForm", method = RequestMethod.POST)
+    @ResponseBody
+    public MessageResult<Void> uploadFileAndForm(@RequestParam(value = "file") MultipartFile[] files, HttpServletRequest request) {
+        MessageResult<Void> messageResult = new MessageResult<>();
+        try {
+            String suggestion = request.getParameter("suggestion");//取出form-data中a的值
+            String phone = request.getParameter("phone");//取出form-data中a的值
+
+            LocalDateTime localDateTime = LocalDateTime.now();
+            String dateStr = localDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+            String rootPath = System.getProperty("user.dir");
+//            String rootPath =   ResourceUtils.getURL("classpath:").getPath();
+            String directory = rootPath + "\\uploadfiles" + "\\" + dateStr + "\\";
+            File destFile = new File(directory);
+            //判断路径是否存在,和C#不一样。她判断路径和文件是否存在
+            if (!destFile.exists()) {
+                destFile.mkdirs();
+            }
+
+            List<String> fileNameList = new ArrayList<>();
+            for (MultipartFile file : files) {
+
+
+                //获取body中的参数
+//            String value = (String)request.getAttribute("paramName");
+                //获取文件名称
+                String sourceFileName = file.getOriginalFilename();
+                //写入目的文件
+                String fileFullName = directory + sourceFileName;
+
+
+                //region  自己计算上传进度
+//            InputStream inputStream = file.getInputStream();
+//            byte[] buffer = new byte[1024];
+//            FileOutputStream fileOutputStream = new FileOutputStream(fileFullName);
+//            long fileSize=file.getSize();
+//            long readTotalSize = 0;
+//            int readSize = 0;
+//            while ((readSize = inputStream.read(buffer)) != -1) {
+//                readTotalSize += readSize;
+//                //计算进度
+//                long progress=readTotalSize/fileSize;
+//                //写入文件
+//                fileOutputStream.write(buffer,0,readSize);
+//
+//            }
+//            fileOutputStream.close();
+//            inputStream.close();
+                //endregion
+
+
+                file.transferTo(new File(fileFullName));
+                fileNameList.add(fileFullName);
+            }
+            String fileNames = String.join(";", fileNameList);
+
+            FeedBack feedBack = new FeedBack();
+            feedBack.setImagepath(fileNames);
+            feedBack.setPhone(phone);
+            feedBack.setSuggestion(suggestion);
+            messageResult = newClassesService.insert(feedBack);
+
+
+            return messageResult;
+//            return fileFullName;
+        } catch (Exception e) {
+            e.printStackTrace();
+            messageResult.setSuccess(false);
+            return messageResult;
+        }
+    }
+
 
     @RequestMapping(value = "/uploadStatus")
     @ResponseBody

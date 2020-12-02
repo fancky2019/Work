@@ -190,7 +190,7 @@ $("#upload").click(function (e) {
     let type = "file";          //后台接收时需要的参数名称，自定义即可
     let id = "uploadFile";            //即input的id，用来寻找值
     let formData = new FormData();
-    var file= $("#" + id)[0].files[0];
+    var file = $("#" + id)[0].files[0];
     debugger;
     formData.append(type, $("#" + id)[0].files[0]);    //生成一对表单属性
 

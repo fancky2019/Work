@@ -2,12 +2,13 @@ server:
   port: 9091
 #公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
 #mapper路径和实体对象路径
-#mybatis:
-#  #  Mapper文件存放的位置
-#  mapperLocations: classpath:mapper/**/*.xml
-#  #  实体类所在的包
-#  typeAliasesPackage: com.valvulas.fancky.model.entity
 
+#要配置mybatis不然mybatis有可能无法Invalid bound statement问题
+mybatis:
+  #  Mapper文件存放的位置
+  mapperLocations: classpath:mapper/**/*.xml
+  #  实体类所在的包
+  typeAliasesPackage: zd.fancky.webconsole.model.entity
 
 logging:
   config: classpath:log4j2.xml
@@ -34,13 +35,27 @@ spring:
   #    username: root
   #    password: 123456# 上传文件总的最大值
 
+  datasource:
+    # sqlserver
+    url: jdbc:sqlserver://db.server.newclasses.org:1433;DatabaseName=NewClasses
+    #url: jdbc:sqlserver://localhost:1433;DatabaseName=RABC
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: EduLifeOnline
+    password: gyxl43401
 
+  #mysql
+  #具体参见类DynamicDataSourceAspect 说明
+  #不用此默认，默认就是写库,多数据源用jdbcUrl，不是url,spring 默认用的是url，用多数据源用url会报错。
+  #    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    username: root
+  #    password: 123456
 
-#springboot:2.1版本要把  enabled: fasle
+  #springboot:2.1版本要把  enabled: fasle
   #上传文件大小设置，否则前端报错
   servlet:
     multipart:
-#      enabled: true
+      #      enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
 

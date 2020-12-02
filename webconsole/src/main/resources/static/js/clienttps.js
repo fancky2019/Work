@@ -139,7 +139,7 @@ let statisticsAnalysis = function () {
                 let yAxisDataClientIn = new Array();
                 let yAxisDataTPS = new Array();
                 //处理后台返回的List
-                for (let item  of data) {
+                for (let item of data) {
                     xAxisData.push(item.logTime);
                     yAxisDataClientIn.push(item.clientCount);
                     yAxisDataTPS.push(item.tPSQueueCount);

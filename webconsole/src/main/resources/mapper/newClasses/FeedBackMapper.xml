@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="zd.fancky.webconsole.dao.newClasses.FeedBackMapper">
+<!--  <resultMap id="BaseResultMap" type="zd.fancky.webconsole.model.entity.newClasses.FeedBack">-->
+<!--    <constructor>-->
+<!--      <idArg column="ID" javaType="java.lang.Integer" jdbcType="INTEGER" />-->
+<!--      <arg column="Suggestion" javaType="java.lang.String" jdbcType="NVARCHAR" />-->
+<!--      <arg column="ImagePath" javaType="java.lang.String" jdbcType="NVARCHAR" />-->
+<!--      <arg column="Phone" javaType="java.lang.String" jdbcType="NVARCHAR" />-->
+<!--    </constructor>-->
+<!--  </resultMap>-->
+<!--  <sql id="Base_Column_List">-->
+<!--    ID, Suggestion, ImagePath, Phone-->
+<!--  </sql>-->
+<!--  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">-->
+<!--    select -->
+<!--    <include refid="Base_Column_List" />-->
+<!--    from FeedBack-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  </select>-->
+<!--  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">-->
+<!--    delete from FeedBack-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  </delete>-->
+  <insert id="insert" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack">
+    insert into FeedBack (Suggestion, ImagePath,
+      Phone)
+    values ( #{suggestion,jdbcType=NVARCHAR}, #{imagepath,jdbcType=NVARCHAR},
+      #{phone,jdbcType=NVARCHAR})
+  </insert>
+<!--  <insert id="insertSelective" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack">-->
+<!--    insert into FeedBack-->
+<!--    <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--      <if test="id != null">-->
+<!--        ID,-->
+<!--      </if>-->
+<!--      <if test="suggestion != null">-->
+<!--        Suggestion,-->
+<!--      </if>-->
+<!--      <if test="imagepath != null">-->
+<!--        ImagePath,-->
+<!--      </if>-->
+<!--      <if test="phone != null">-->
+<!--        Phone,-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--    <trim prefix="values (" suffix=")" suffixOverrides=",">-->
+<!--      <if test="id != null">-->
+<!--        #{id,jdbcType=INTEGER},-->
+<!--      </if>-->
+<!--      <if test="suggestion != null">-->
+<!--        #{suggestion,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="imagepath != null">-->
+<!--        #{imagepath,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="phone != null">-->
+<!--        #{phone,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--  </insert>-->
+<!--  <update id="updateByPrimaryKeySelective" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack">-->
+<!--    update FeedBack-->
+<!--    <set>-->
+<!--      <if test="suggestion != null">-->
+<!--        Suggestion = #{suggestion,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="imagepath != null">-->
+<!--        ImagePath = #{imagepath,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="phone != null">-->
+<!--        Phone = #{phone,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--    </set>-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  </update>-->
+<!--  <update id="updateByPrimaryKey" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack">-->
+<!--    update FeedBack-->
+<!--    set Suggestion = #{suggestion,jdbcType=NVARCHAR},-->
+<!--      ImagePath = #{imagepath,jdbcType=NVARCHAR},-->
+<!--      Phone = #{phone,jdbcType=NVARCHAR}-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  </update>-->
+<!--  &lt;resultMap id="BaseResultMap" type="zd.fancky.webconsole.model.entity.newClasses.FeedBack"&gt;-->
+<!--    &lt;constructor&gt;-->
+<!--      &lt;idArg column="ID" javaType="java.lang.Integer" jdbcType="INTEGER" /&gt;-->
+<!--      &lt;arg column="Suggestion" javaType="java.lang.String" jdbcType="NVARCHAR" /&gt;-->
+<!--      &lt;arg column="ImagePath" javaType="java.lang.String" jdbcType="NVARCHAR" /&gt;-->
+<!--      &lt;arg column="Phone" javaType="java.lang.String" jdbcType="NVARCHAR" /&gt;-->
+<!--    &lt;/constructor&gt;-->
+<!--  &lt;/resultMap&gt;-->
+<!--  &lt;sql id="Base_Column_List"&gt;-->
+<!--    ID, Suggestion, ImagePath, Phone-->
+<!--  &lt;/sql&gt;-->
+<!--  &lt;select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap"&gt;-->
+<!--    select -->
+<!--    &lt;include refid="Base_Column_List" /&gt;-->
+<!--    from FeedBack-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  &lt;/select&gt;-->
+<!--  &lt;delete id="deleteByPrimaryKey" parameterType="java.lang.Integer"&gt;-->
+<!--    delete from FeedBack-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  &lt;/delete&gt;-->
+<!--  &lt;insert id="insert" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack"&gt;-->
+<!--    insert into FeedBack (ID, Suggestion, ImagePath, -->
+<!--      Phone)-->
+<!--    values (#{id,jdbcType=INTEGER}, #{suggestion,jdbcType=NVARCHAR}, #{imagepath,jdbcType=NVARCHAR}, -->
+<!--      #{phone,jdbcType=NVARCHAR})-->
+<!--  &lt;/insert&gt;-->
+<!--  <insert id="insertSelective" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack">-->
+<!--    insert into FeedBack-->
+<!--    <trim prefix="(" suffix=")" suffixOverrides=",">-->
+<!--      <if test="id != null">-->
+<!--        ID,-->
+<!--      </if>-->
+<!--      <if test="suggestion != null">-->
+<!--        Suggestion,-->
+<!--      </if>-->
+<!--      <if test="imagepath != null">-->
+<!--        ImagePath,-->
+<!--      </if>-->
+<!--      <if test="phone != null">-->
+<!--        Phone,-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--    <trim prefix="values (" suffix=")" suffixOverrides=",">-->
+<!--      <if test="id != null">-->
+<!--        #{id,jdbcType=INTEGER},-->
+<!--      </if>-->
+<!--      <if test="suggestion != null">-->
+<!--        #{suggestion,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="imagepath != null">-->
+<!--        #{imagepath,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--      <if test="phone != null">-->
+<!--        #{phone,jdbcType=NVARCHAR},-->
+<!--      </if>-->
+<!--    </trim>-->
+<!--  </insert>-->
+<!--  &lt;update id="updateByPrimaryKeySelective" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack"&gt;-->
+<!--    update FeedBack-->
+<!--    &lt;set&gt;-->
+<!--      &lt;if test="suggestion != null"&gt;-->
+<!--        Suggestion = #{suggestion,jdbcType=NVARCHAR},-->
+<!--      &lt;/if&gt;-->
+<!--      &lt;if test="imagepath != null"&gt;-->
+<!--        ImagePath = #{imagepath,jdbcType=NVARCHAR},-->
+<!--      &lt;/if&gt;-->
+<!--      &lt;if test="phone != null"&gt;-->
+<!--        Phone = #{phone,jdbcType=NVARCHAR},-->
+<!--      &lt;/if&gt;-->
+<!--    &lt;/set&gt;-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  &lt;/update&gt;-->
+<!--  &lt;update id="updateByPrimaryKey" parameterType="zd.fancky.webconsole.model.entity.newClasses.FeedBack"&gt;-->
+<!--    update FeedBack-->
+<!--    set Suggestion = #{suggestion,jdbcType=NVARCHAR},-->
+<!--      ImagePath = #{imagepath,jdbcType=NVARCHAR},-->
+<!--      Phone = #{phone,jdbcType=NVARCHAR}-->
+<!--    where ID = #{id,jdbcType=INTEGER}-->
+<!--  &lt;/update&gt;-->
+</mapper>
