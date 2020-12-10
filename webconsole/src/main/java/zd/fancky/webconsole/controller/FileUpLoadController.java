@@ -108,13 +108,14 @@ public class FileUpLoadController {
         }
     }
 
-
+    //注：前端传过来的参数名称files要对应
     //  PicUploadResult uploadManyImg(MultipartFile[] uploadFile, HttpServletRequest request);
     //单文件上传，多个文件上传，参数是个数组
     @RequestMapping(value = "/uploadFileAndForm", method = RequestMethod.POST)
     @ResponseBody
-    public MessageResult<Void> uploadFileAndForm(@RequestParam(value = "file") MultipartFile[] files, HttpServletRequest request) {
+    public MessageResult<Void> uploadFileAndForm(@RequestParam(value = "files") MultipartFile[] files, HttpServletRequest request) {
         MessageResult<Void> messageResult = new MessageResult<>();
+        logger.info("uploadFileAndForm");
         try {
             String suggestion = request.getParameter("suggestion");//取出form-data中a的值
             String phone = request.getParameter("phone");//取出form-data中a的值
