@@ -23,6 +23,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 上传文件不需要添加额外依赖
+ * 长传进度：
+ * 添加依赖：commons-fileupload
+ * 添加：uploadFile文件夹类
+ * 添加：MultipartResolverConfig配置
+ */
 @Controller
 @RequestMapping("/FileUpLoad")
 public class FileUpLoadController {
